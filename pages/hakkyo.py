@@ -1,3 +1,4 @@
+'''
 import streamlit as st
 
 
@@ -8,4 +9,15 @@ st.image("https://upload.wikimedia.org/wikipedia/ko/thumb/e/eb/%ED%8F%AC%EC%BC%9
     '노말', '불꽃', '물', '풀', '전기', '얼음', '격투', '독', 
     '땅', '비행', '에스퍼', '벌레', '바위', '고스트', '드래곤', '악', '강철', '페어리'
 ])
+'''
 
+import streamlit as st
+
+st.title('나의 첫 웹 서비스 만들기!!')
+
+# 사용자 입력 받기
+name = st.text_input('이름을 입력해주세요 : ')
+mbti = st.selectbox('MBTI를 선택해주세요:', [
+    'INTJ', 'INTP', 'ENTJ', 'ENTP', 'INFJ', 'INFP', 'ENFJ', 'ENFP', 
+    'ISTJ', 'ISFJ', 'ESTJ', 'ESFJ', 'ISTP', 'ISFP', 'ESTP', 'ESFP'
+])
